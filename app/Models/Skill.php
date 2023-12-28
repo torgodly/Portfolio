@@ -21,4 +21,10 @@ class Skill extends Model implements HasMedia
     {
         return $this->getFirstMediaUrl('icon');
     }
+
+    //skills
+    public function projects()
+    {
+        return $this->belongsToMany(Project::class);
+    }
 }

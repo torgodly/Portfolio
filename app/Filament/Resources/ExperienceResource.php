@@ -47,7 +47,8 @@ class ExperienceResource extends Resource
                 Tables\Columns\TextColumn::make('position')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('description')
-                    ->searchable(),
+                    ->searchable()->limit(50),
+                //date
                 Tables\Columns\TextColumn::make('year')
                     ->sortable(),
             ])

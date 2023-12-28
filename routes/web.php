@@ -19,5 +19,11 @@ Route::get('/', function () {
     $skills = \App\Models\Skill::where('type', 'skill')->get();
     $tools = \App\Models\Skill::where('type', 'tool')->get();
     $experiences = \App\Models\Experience::OrderBy('year', 'asc')->get();
-    return view('welcome', compact('about', 'user', 'skills', 'tools', 'experiences'));
+    $projects = \App\Models\Project::OrderBy('date', 'asc')->get();
+    return view('welcome', compact('about', 'user', 'skills', 'tools', 'experiences', 'projects'));
 });
+
+//project show
+Route::get('/projects/{project}', function (\App\Models\Project $project) {
+    return view('projects.show', compact('project'));
+})->name('projects.show');

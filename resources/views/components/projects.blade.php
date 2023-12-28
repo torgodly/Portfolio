@@ -43,19 +43,10 @@
                 </li>
 
                 <!-- start items list -->
-                <x-project-list-item/>
-                <x-project-list-item/>
-                <x-project-list-item/>
-                <x-project-list-item/>
-                <x-project-list-item/>
-                <x-project-list-item/>
-                <x-project-list-item/>
-                <x-project-list-item/>
-                <x-project-list-item/>
-                <x-project-list-item/>
-                <x-project-list-item/>
-                <x-project-list-item/>
-                <x-project-list-item/>
+                @foreach($projects as $project)
+                    <x-project-list-item :project="$project"/>
+
+                @endforeach
                 <!-- end items list -->
 
                 <!-- load more button -->

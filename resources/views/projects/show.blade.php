@@ -11,7 +11,7 @@
           content="portfolio, agency, business, clean, company, corporate, creative, gallery, rtl, modern, photography, responsive, sass">
 
     <!-- title of the browser tab -->
-    <title>{{__('title')}}</title>
+    <title>Nafie - HTML Portfolio Template</title>
 
     <!-- favicon -->
     <link rel="icon" href="{{asset('assets/favicon.ico')}}" media="(prefers-color-scheme: light)">
@@ -35,6 +35,7 @@
 
     <!-- start circle cursor -->
     <x-circle-cursor/>
+
     <!-- end circle cursor -->
 
     <!-- start preloader -->
@@ -45,37 +46,71 @@
     <x-header/>
     <!-- end of header -->
 
-    <!-- start of hero section -->
-    <x-hero :about="$about"/>
-    <!-- end of hero section -->
+    <!-- start of portfolio single page -->
+    <div class="portfolio-page portfolio-section section page hide-in-preloading">
+        <div class="container">
+            <div class="section-content">
 
-    <!-- start of statistics section -->
-    <x-statistics/>
-    <!-- end of statistics section -->
+                <!-- portfolio items -->
+                <ul class="portfolio__items has-works">
 
-    <!-- start of about section -->
-    <x-about :about="$about"/>
-    <!-- end of about section -->
+                    <!-- project details -->
+                    <li class="portfolio__text">
+                        <div class="text-box-block">
 
-    <!-- start of skills section -->
-    <x-skills-tools :skills="$skills" :tools="$tools"/>
-    <!-- end of skills section -->
+                            <!-- project category link -->
+                            <span class="subtitle">
+                  <a href="">{{$project->tool->name}}</a>
+                </span>
 
-    <!-- start of experience section -->
-    <x-experience :experiences="$experiences"/>
-    <!-- end of experience section -->
+                            <!-- project title -->
+                            <h2>{{$project->title}}</h2>
 
-    <!-- start of projects section -->
-    <x-projects :projects="$projects"/>
-    <!-- end of projects section -->
+                            <!-- project description -->
+                            <p>{{$project->description}}</p>
+                            <!-- project tools -->
+                            <ul class="portfolio__tools">
+                                @foreach($project->skills as $skill)
+                                    <x-project-tool-item :tool="$skill->name"/>
+                                @endforeach
+                            </ul>
 
-    <!-- start of testimonials section -->
-    <x-testimonials/>
-    <!-- end of testimonials section -->
+                            <!-- project live preview link -->
+                            <a href="{{$project->link}}" target="_blank"
+                               class="portfolio__livePreview w-btn w-btn--s2 w-btn--dark">Live Preview</a>
+                            <a href="{{$project->github}}" target="_blank"
+                               class="portfolio__livePreview w-btn w-btn--s2 w-btn--dark">Github</a>
 
-    <!-- start of contact section -->
-    <x-contact/>
-    <!-- end of contact section -->
+                        </div>
+                    </li>
+
+                    <!-- project screenshots -->
+                    @foreach($project->media as $image)
+                        <li class="portfolio__item">
+                            <!-- href points to the fully sized image -->
+                            <a class="portfolio__link glightbox"
+                               href="{{$image->getUrl()}}" data-gallery="gallery1"
+                            >
+
+                                <!-- item image thumbnails -->
+                                <div class="portfolio__imgWrapper">
+                                    <img class="portfolio__imgWrapper__img"
+                                         src="{{$image->getUrl()}}" alt="caption 1"
+                                         loading="lazy">
+                                </div>
+
+                                <!-- item details -->
+                                <div class="portfolio__details">
+                                    <h3 class="portfolio__details__title">{{$project->title}}</h3>
+                                </div>
+                            </a>
+                        </li>
+                    @endforeach
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end of portfolio single page -->
 
     <!-- start of footer -->
     <x-footer/>
@@ -133,6 +168,7 @@
         </symbol>
     </svg>
 </div>
+
 
 <!-- js plugins file -->
 <script src="{{asset('js/plugins.min.js')}}"></script>
