@@ -14,5 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome', ['user' => \App\Models\User::first()]);
+    $about = \App\Models\About::first();
+    $user = \App\Models\User::first();
+    return view('welcome', ['user' => $user, 'about' => $about]);
 });

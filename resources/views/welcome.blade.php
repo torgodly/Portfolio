@@ -46,7 +46,7 @@
     <!-- end of header -->
 
     <!-- start of hero section -->
-    <x-hero/>
+    <x-hero :about="$about"/>
     <!-- end of hero section -->
 
     <!-- start of statistics section -->
@@ -54,7 +54,7 @@
     <!-- end of statistics section -->
 
     <!-- start of about section -->
-    <x-about/>
+    <x-about :about="$about"/>
     <!-- end of about section -->
 
     <!-- start of skills section -->

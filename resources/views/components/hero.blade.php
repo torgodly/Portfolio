@@ -1,23 +1,28 @@
+@props(['about'])
 <div id="hero" class="hero-section hide-in-preloading" data-pan-effect>
+
 
     <!-- hero image -->
     <div class="hero__imgWrapper">
         <div class="hero__imgLayer">
-            <img class="hero__imgLayer__img" src="assets/images/hero-img.png" alt="User Name" loading="lazy">
+            <img class="hero__imgLayer__img" src="{{$about->hero_image}}" alt="User Name" loading="lazy">
         </div>
         <div class="hero__imgLayer">
-            <img class="hero__imgLayer__img" src="assets/images/hero-img.png" alt="User Name" loading="lazy">
+            <img class="hero__imgLayer__img" src="{{$about->hero_image}}" alt="User Name" loading="lazy">
         </div>
     </div>
 
     <!-- hero text -->
     <div class="hero__text">
+
+
         <h2 class="hero__text__title">
-            We Design & Build
-            <br>
-            Creative Products
+            {{__($about->slogan)}}
         </h2>
-        <a href="#contact" class="hero__text__btn w-btn w-btn--s2 w-btn--outline-light">Get In Touch</a>
+
+
+
+        <a href="#contact" class="hero__text__btn w-btn w-btn--s2 w-btn--outline-light">{{__('Get In Touch')}}</a>
     </div>
 
     <!-- social icons -->
