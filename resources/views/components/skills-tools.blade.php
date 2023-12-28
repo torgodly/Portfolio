@@ -31,25 +31,16 @@
 
                 <!-- skills list -->
                 <ul class="skills__items" data-stagger-delay="50" data-type="skills">
-                    <x-skill-list-item/>
-                    <x-skill-list-item/>
-                    <x-skill-list-item/>
-                    <x-skill-list-item/>
-                    <x-skill-list-item/>
-                    <x-skill-list-item/>
-                    <x-skill-list-item/>
-                    <x-skill-list-item/>
+                    @foreach($skills as $skill)
+                        <x-skill-list-item :skill="$skill"/>
+                    @endforeach
                 </ul>
 
                 <!-- tools list -->
                 <ul class="skills__items" data-stagger-delay="50" data-type="tools" style="display: none;">
-                    <x-tools-list-item/>
-                    <x-tools-list-item/>
-                    <x-tools-list-item/>
-                    <x-tools-list-item/>
-                    <x-tools-list-item/>
-                    <x-tools-list-item/>
-                    <x-tools-list-item/>
+                    @foreach($tools as $tool)
+                        <x-tools-list-item :tool="$tool"/>
+                    @endforeach
                 </ul>
             </div>
         </div>

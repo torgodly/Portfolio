@@ -58,7 +58,7 @@
     <!-- end of about section -->
 
     <!-- start of skills section -->
-    <x-skills-tools/>
+    <x-skills-tools :skills="$skills" :tools="$tools"/>
     <!-- end of skills section -->
 
     <!-- start of experience section -->

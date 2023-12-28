@@ -45,8 +45,8 @@ class AboutResource extends Resource
                     ->string()
                     ->required()
                     ->maxLength(255)->columnSpanFull(),
-                Forms\Components\SpatieMediaLibraryFileUpload::make('hero')->collection('hero')->image()->columnSpanFull(),
-                Forms\Components\SpatieMediaLibraryFileUpload::make('about')->collection('about')->image()->columnSpanFull(),
+                Forms\Components\SpatieMediaLibraryFileUpload::make('hero')->collection('hero')->image()->columnSpanFull()->required(),
+                Forms\Components\SpatieMediaLibraryFileUpload::make('about')->collection('about')->image()->columnSpanFull()->required(),
             ]);
     }
 

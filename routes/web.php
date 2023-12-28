@@ -16,5 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $about = \App\Models\About::first();
     $user = \App\Models\User::first();
-    return view('welcome', ['user' => $user, 'about' => $about]);
+    $skills = \App\Models\Skill::where('type', 'skill')->get();
+    $tools = \App\Models\Skill::where('type', 'tool')->get();
+    return view('welcome', compact('about', 'user', 'skills', 'tools'));
 });
