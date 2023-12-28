@@ -8,7 +8,9 @@
 
                 <!-- experience items -->
                 <ul class="experience__timeline__items">
-                    <x-experience-list-item/>
+                    @foreach($experiences as $experience)
+                        <x-experience-list-item :experience="$experience"/>
+                    @endforeach
                     <li class="experience__timeline__item has-ultimate-tooltip" tabindex="0"></li>
                     <li class="experience__timeline__item has-ultimate-tooltip" tabindex="0"></li>
                 </ul>
@@ -19,11 +21,11 @@
                 <div class="text-box-inline">
                     <span class="subtitle">experience</span>
                     <h2>
-                        12+ Years of Experience
+                        {{$experiences->count()}}+ Years of Experience
                         <br>
                         With Many Awards!
                     </h2>
-                    <p>I have been developing sites and apps for 12 years and i know for sure the main trends and directions of modern design, I have been a visionary and a reliable software engineering partner for world-class brands. You will get a decent result as you expect.</p>
+                    <p>I have been developing sites and apps for {{$experiences->count()}} years and i know for sure the main trends and directions of modern design, I have been a visionary and a reliable software engineering partner for world-class brands. You will get a decent result as you expect.</p>
                 </div>
             </div>
         </div>

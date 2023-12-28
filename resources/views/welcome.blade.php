@@ -62,7 +62,7 @@
     <!-- end of skills section -->
 
     <!-- start of experience section -->
-    <x-experience/>
+    <x-experience :experiences="$experiences"/>
     <!-- end of experience section -->
 
     <!-- start of projects section -->

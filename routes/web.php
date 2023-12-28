@@ -18,5 +18,6 @@ Route::get('/', function () {
     $user = \App\Models\User::first();
     $skills = \App\Models\Skill::where('type', 'skill')->get();
     $tools = \App\Models\Skill::where('type', 'tool')->get();
-    return view('welcome', compact('about', 'user', 'skills', 'tools'));
+    $experiences = \App\Models\Experience::OrderBy('year', 'asc')->get();
+    return view('welcome', compact('about', 'user', 'skills', 'tools', 'experiences'));
 });
