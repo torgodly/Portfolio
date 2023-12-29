@@ -44,10 +44,10 @@ class ProjectResource extends Resource
                     ->required()
                     ->url()
                     ->prefixIcon('heroicon-m-link'),
-                Forms\Components\SpatieMediaLibraryFileUpload::make('image')
+                Forms\Components\SpatieMediaLibraryFileUpload::make('images')
                     ->multiple()
                     ->required()
-                    ->collection('image')->columnSpanFull(),
+                    ->collection('project')->columnSpanFull(),
             ]);
     }
 

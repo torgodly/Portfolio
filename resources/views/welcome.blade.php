@@ -69,8 +69,8 @@
     <x-projects :projects="$projects"/>
     <!-- end of projects section -->
 
-    <!-- start of testimonials section -->
-    <x-testimonials/>
+    <!-- start of we section -->
+    <x-testimonials :testimonials="$testimonials"/>
     <!-- end of testimonials section -->
 
     <!-- start of contact section -->

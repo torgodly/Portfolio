@@ -15,30 +15,9 @@
     <!-- testimonials items -->
     <div class="section-content">
         <ul class="testimonials__items" data-stagger-delay="500">
-            <x-testimonials-list-item/>
-            <x-testimonials-list-item/>
-            <x-testimonials-list-item/>
-            <x-testimonials-list-item/>
-            <x-testimonials-list-item/>
-            <x-testimonials-list-item/>
-            <x-testimonials-list-item/>
-            <x-testimonials-list-item/>
-            <x-testimonials-list-item/>
-            <x-testimonials-list-item/>
-            <x-testimonials-list-item/>
-            <x-testimonials-list-item/>
-            <x-testimonials-list-item/>
-            <x-testimonials-list-item/>
-            <x-testimonials-list-item/>
-            <x-testimonials-list-item/>
-            <x-testimonials-list-item/>
-            <x-testimonials-list-item/>
-            <x-testimonials-list-item/>
-            <x-testimonials-list-item/>
-            <x-testimonials-list-item/>
-            <x-testimonials-list-item/>
-            <x-testimonials-list-item/>
-            <x-testimonials-list-item/>
+            @foreach($testimonials as $testimonial)
+                <x-testimonials-list-item :testimonial="$testimonial"/>
+            @endforeach
         </ul>
     </div>
 </div>

@@ -20,7 +20,8 @@ Route::get('/', function () {
     $tools = \App\Models\Skill::where('type', 'tool')->get();
     $experiences = \App\Models\Experience::OrderBy('year', 'asc')->get();
     $projects = \App\Models\Project::OrderBy('date', 'asc')->get();
-    return view('welcome', compact('about', 'user', 'skills', 'tools', 'experiences', 'projects'));
+    $testimonials = \App\Models\Testimonial::all();
+    return view('welcome', compact('about', 'user', 'skills', 'tools', 'experiences', 'projects', 'testimonials'));
 });
 
 //project show
