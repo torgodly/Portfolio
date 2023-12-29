@@ -72,7 +72,6 @@ class AboutPage extends Page implements HasForms
     {
         try {
             $data = $this->form->getState();
-            dd($data);
             About::updateOrCreate(
                 ['id' => 1], // Search criteria
                 $data // Values to update or create
