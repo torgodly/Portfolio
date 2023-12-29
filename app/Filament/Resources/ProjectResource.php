@@ -41,7 +41,6 @@ class ProjectResource extends Resource
                     ->url()
                     ->prefixIcon('heroicon-m-globe-alt'),
                 Forms\Components\TextInput::make('github')
-                    ->required()
                     ->url()
                     ->prefixIcon('heroicon-m-link'),
                 Forms\Components\SpatieMediaLibraryFileUpload::make('images')

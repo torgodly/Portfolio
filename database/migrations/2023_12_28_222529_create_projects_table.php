@@ -17,7 +17,7 @@ return new class extends Migration {
             $table->date('date');
             $table->foreignId('main_tool')->nullable()->constrained('skills')->onDelete('cascade');
             $table->string('link');
-            $table->string('github');
+            $table->string('github')->nullable();
             $table->timestamps();
         });
     }

@@ -78,8 +78,10 @@
                             <!-- project live preview link -->
                             <a href="{{$project->link}}" target="_blank"
                                class="portfolio__livePreview w-btn w-btn--s2 w-btn--dark">Live Preview</a>
-                            <a href="{{$project->github}}" target="_blank"
-                               class="portfolio__livePreview w-btn w-btn--s2 w-btn--dark">Github</a>
+                            @if(isset($project->github))
+                                <a href="{{$project->github}}" target="_blank"
+                                   class="portfolio__livePreview w-btn w-btn--s2 w-btn--dark">Github</a>
+                            @endif
 
                         </div>
                     </li>
