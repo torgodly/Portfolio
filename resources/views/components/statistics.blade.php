@@ -14,7 +14,7 @@
 
                         <!-- statistics text -->
                         <div class="stats__text">
-                            <h3 class="stats__text__num">12+</h3>
+                            <h3 class="stats__text__num">{{$experiences->count()}}+</h3>
                             <strong class="stats__text__title">Years of Experience</strong>
                         </div>
 
@@ -33,7 +33,7 @@
 
                         <!-- statistics text -->
                         <div class="stats__text">
-                            <h3 class="stats__text__num">230+</h3>
+                            <h3 class="stats__text__num">{{$projects->count()}}+</h3>
                             <strong class="stats__text__title">Completed Projects</strong>
                         </div>
 
@@ -52,7 +52,7 @@
 
                         <!-- statistics text -->
                         <div class="stats__text">
-                            <h3 class="stats__text__num">95+</h3>
+                            <h3 class="stats__text__num">{{$testimonials->count()}}+</h3>
                             <strong class="stats__text__title">Happy Clients</strong>
                         </div>
 

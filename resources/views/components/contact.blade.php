@@ -7,7 +7,7 @@
                 <div class="text-box-inline">
                     <span class="subtitle">contact</span>
                     <h2>
-                        Have You Any Project?
+                        You need A Project?
                         <br>
                         Please Drop a Message
                     </h2>
@@ -22,7 +22,7 @@
                         </svg>
                         <div class="contact__info__item__text">
                             <strong>Address:</strong>
-                            941 Saqrqorish Road, alandalos, grnata, wa 47122-4194
+                            {{$about->address}}
                         </div>
                     </li>
                     <li class="contact__info__item">
@@ -32,8 +32,7 @@
                         <div class="contact__info__item__text">
                             <strong>Phone:</strong>
                             <ul>
-                                <li><a href="tel:02966202290" class="ltr-dir">(02) 966 202 290</a></li>
-                                <li><a href="tel:02966202291" class="ltr-dir">(02) 966 202 291</a></li>
+                                <li><a href="tel:02966202290" class="ltr-dir">{{$about->phone_number}}</a></li>
                             </ul>
                         </div>
                     </li>
@@ -44,8 +43,7 @@
                         <div class="contact__info__item__text">
                             <strong>Email:</strong>
                             <ul>
-                                <li><a href="mailto:info@nafie.com">info@nafie.com</a></li>
-                                <li><a href="mailto:support@nafie.com">support@nafie.com</a></li>
+                                <li><a href="mailto:{{$about->email}}">{{$about->email}}</a></li>
                             </ul>
                         </div>
                     </li>

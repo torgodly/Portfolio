@@ -14,7 +14,7 @@ return new class extends Migration {
             $table->id();
             $table->string('company');
             $table->string('position');
-            $table->string('description');
+            $table->text('description');
             $table->year('year');
             $table->timestamps();
         });

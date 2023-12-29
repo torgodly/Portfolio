@@ -1,1 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 199"><path fill="#1f1f1f" d="M.72 8.92V.856h57.6l111.168 189.792V199h-57.312L.72 8.92zm114.048 64.224V.856h54.72v165.888l-54.72-93.6zM.72 32.824l54.72 93.6V199H.72V32.824z"/></svg>
+<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 199">-->
+<!--    <path fill="#1f1f1f"-->
+<!--          d="M.72 8.92V.856h57.6l111.168 189.792V199h-57.312L.72 8.92zm11
+4.048 64.224V.856h54.72v165.888l-54.72-93.6zM.72 32.824l54.72 93.6V199H.72V32.824z"/>-->
+<!--</svg>-->
+
+
+<svg width="68.3" height="68.8" viewBox="0 0 68.3 68.8" xmlns="http://www.w3.org/2000/svg">
+    <g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="#000" stroke-width="0.25mm"
+       fill="#000" style="stroke:#000;stroke-width:0.25mm;fill:#000">
+        <path
+            d="M 47.9 68.8 L 44.4 56.6 L 27.7 56.6 L 31.9 41.2 L 39.9 41.2 L 28.1 0 L 46.4 0 L 68.3 68.8 L 47.9 68.8 Z M 0 68.8 L 21.9 0 L 23.6 0 L 31.5 27.4 L 20 68.8 L 0 68.8 Z"
+            vector-effect="non-scaling-stroke"/>
+    </g>
+</svg>

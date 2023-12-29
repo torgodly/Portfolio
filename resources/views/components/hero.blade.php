@@ -29,13 +29,13 @@
     <div class="hero__social">
         <ul class="hero__social__list">
             <li class="hero__social__item">
-                <a href="#" target="_blank" rel="noreferrer" data-tooltip='{ "text": "Facebook", "dir": "right" }'>
+                <a href="https://www.facebook.com/torgodly" target="_blank" rel="noreferrer" data-tooltip='{ "text": "Facebook", "dir": "right" }'>
                     <i class="fa-brands fa-facebook-f"></i>
                 </a>
             </li>
             <li class="hero__social__item">
-                <a href="#" target="_blank" rel="noreferrer" data-tooltip='{ "text": "Twitter", "dir": "right" }'>
-                    <i class="fa-brands fa-twitter"></i>
+                <a href="https://www.x.com/torgodly" target="_blank" rel="noreferrer" data-tooltip='{ "text": "Twitter", "dir": "right" }'>
+                    <i class="fa-brands fa-x"></i>
                 </a>
             </li>
             <li class="hero__social__item">

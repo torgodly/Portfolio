@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-          content="Nafie develops the best quality website that serves for the long-term. Well-documented, clean, easy and elegant interface helps any non-technical clients.">
+          content="Abdo develops the best quality website that serves for the long-term. Well-documented, clean, easy and elegant interface helps any non-technical clients.">
     <meta name="keywords"
           content="portfolio, agency, business, clean, company, corporate, creative, gallery, rtl, modern, photography, responsive, sass">
 
     <!-- title of the browser tab -->
-    <title>Nafie - HTML Portfolio Template</title>
+    <title>Abdo - HTML Portfolio Template</title>
 
     <!-- favicon -->
     <link rel="icon" href="{{asset('assets/favicon.ico')}}" media="(prefers-color-scheme: light)">
@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&family=Saira+Stencil+One&text=Nafie&display=swap">
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&family=Saira+Stencil+One&text=Abdo&display=swap">
 
     <!-- css libraries file -->
     <link rel="stylesheet" href="{{asset('css/libraries.min.css')}}">

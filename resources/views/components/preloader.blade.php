@@ -3,7 +3,7 @@
 
         <!-- brand logo -->
         <div class="preloader__logo">
-            <img class="preloader__logo__img" src="assets/images/preloader-logo.svg" alt="Nafie" loading="lazy">
+            <img class="preloader__logo__img" src="assets/images/preloader-logo.svg" alt="Abdo" loading="lazy">
         </div>
 
         <!-- loading bar -->
