@@ -4,7 +4,6 @@ namespace App\Filament\Pages;
 
 use App\Models\About;
 use Filament\Actions\Action;
-use Filament\Forms\Components\ColorPicker;
 use Filament\Forms\Components\Grid;
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use Filament\Forms\Components\Textarea;
@@ -21,8 +20,10 @@ class AboutPage extends Page implements HasForms
     protected static ?string $navigationIcon = 'heroicon-o-information-circle';
     protected static ?string $navigationLabel = 'About';
     protected static string $view = 'filament.pages.about-page';
+    protected static ?string $navigationGroup = 'Website';
+
+
     public $data;
-    public $hero;
 
 
     public function mount(): void
@@ -34,7 +35,7 @@ class AboutPage extends Page implements HasForms
     public function form(Form $form): Form
     {
         return $form
-            ->schema([Grid::make(3)->schema([
+            ->schema([Grid::make(2)->schema([
                 TextInput::make('slogan')
                     ->string()
                     ->required()
@@ -59,14 +60,10 @@ class AboutPage extends Page implements HasForms
                     ->string()
                     ->required()
                     ->maxLength(255)->columnSpanFull(),
-                ColorPicker::make('hsl_color')
-                    ->hsl(),
-                ColorPicker::make('hsl_color')
-                    ->hsl(),
-                ColorPicker::make('hsl_color')
-                    ->hsl(),
                 SpatieMediaLibraryFileUpload::make('hero')->collection('hero')->image()->columnSpanFull()->required(),
-                SpatieMediaLibraryFileUpload::make('about')->collection('about')->image()->columnSpanFull()->required(),])])->model(About::first())->statePath('data');
+                SpatieMediaLibraryFileUpload::make('about')->collection('about')->image()->columnSpanFull()->required(),])])
+            ->model(About::first())
+            ->statePath('data');
 
 
     }
