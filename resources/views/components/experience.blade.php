@@ -21,11 +21,9 @@
                 <div class="text-box-inline">
                     <span class="subtitle">experience</span>
                     <h2>
-                        {{$experiences->count()}}+ Years of Experience
-                        <br>
-                        With Many Awards!
+                        My Coding Odyssey
                     </h2>
-                    <p>I have been developing sites and apps for {{$experiences->count()}} years and i know for sure the main trends and directions of modern design, I have been a visionary and a reliable software engineering partner for world-class brands. You will get a decent result as you expect.</p>
+                    <p>Embark on a journey through my professional evolution, exploring the roles I've undertaken and the impactful projects I've championed. From mastering Laravel to pushing the boundaries of development, each chapter represents a step forward in my evolution as a developer, with experiences that shape the coder I am today</p>
                 </div>
             </div>
         </div>
