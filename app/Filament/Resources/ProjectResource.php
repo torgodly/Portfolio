@@ -6,6 +6,7 @@ use App\Filament\Resources\ProjectResource\Pages;
 use App\Filament\Resources\ProjectResource\RelationManagers;
 use App\Models\Project;
 use Filament\Forms;
+use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -32,7 +33,7 @@ class ProjectResource extends Resource
                     ->maxLength(60000)->columnSpanFull(),
                 Select::make('main_tool')
                     ->relationship(name: 'tool', titleAttribute: 'name')->required(),
-                Forms\Components\Datepicker::make('date')->required()->native(false)
+                Datepicker::make('date')->required()->native(false)
                     ->displayFormat('F Y')
                 ,
                 Select::make('skills')
