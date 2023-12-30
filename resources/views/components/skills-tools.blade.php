@@ -7,12 +7,9 @@
                 <div class="text-box-inline">
                     <span class="subtitle">my skills</span>
                     <h2>
-                        What My Programming
-                        <br>
-                        Skills Included?
+                        Crafting Digital Magic
                     </h2>
-                    <p>I develop simple, intuitive and responsive user interface that helps users get things done with less effort and time with those technologies.</p>
-
+<p>I go beyond pretty interfaces. With expertise in Laravel and PHP, I shape seamless digital products that not only look good but work effortlessly. Let's build products that speak simplicity and functionality, making a real impact in the digital realm.</p>
                     <!-- switcher button -->
                     <div class="skills__text__switcher toggle-switch-btn">
                         <input id="skills-list" type="radio" name="items_type" value="skills" checked>
